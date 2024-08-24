@@ -1,5 +1,11 @@
-<button (click)="paidToggle()">toggle paid</button>
+<div [ngSwitch]="switchNumber">
+    <div *ngSwitchCase="1"> the number is 1</div>
+    <div *ngSwitchCase="2"> the number is 2</div>
+    <div *ngSwitchDefault> none of them</div>
 
+</div>
+<hr>
+<button (click)="paidToggle()">toggle paid</button>
 <div *ngIf="isPaid;else elseContent">PAID</div>
 <ng-template #elseContent>
     not paid

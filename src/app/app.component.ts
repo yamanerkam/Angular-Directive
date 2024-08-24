@@ -35,4 +35,6 @@ export class AppComponent {
     "Tokat", "Trabzon", "Tunceli", "Uşak", "Van", "Yalova", "Yozgat", "Zonguldak"
   ];
 
+  switchNumber = 2
+
 }
