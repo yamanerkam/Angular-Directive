@@ -16,7 +16,10 @@ export class AppComponent {
   // it adds the html elements new behaviours and extra features
   // helps us to manipulate dom objects
   listToggle: boolean = false
-
+  isPaid = false
+  paidToggle() {
+    this.isPaid = !this.isPaid
+  }
   listToggleFunction() {
     this.listToggle = !this.listToggle
   }

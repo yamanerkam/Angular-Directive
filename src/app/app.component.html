@@ -1,3 +1,10 @@
+<button (click)="paidToggle()">toggle paid</button>
+
+<div *ngIf="isPaid;else elseContent">PAID</div>
+<ng-template #elseContent>
+    not paid
+</ng-template>
+<hr>
 <button (click)="listToggleFunction()">toggle list</button>
 <div *ngIf="listToggle">
     <div *ngFor="let city of cities; index as  i;let isEven = even; let isOdd = odd ">
