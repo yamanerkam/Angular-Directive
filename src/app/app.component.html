@@ -1,3 +1,5 @@
-<ul *ngFor="let city of cities; let i = index">
-    <li>{{i+1}} {{city}}</li>
-</ul>
+<div *ngFor="let city of cities; index as  i;let isEven = even; let isOdd = odd ">
+    <p [ngClass]="{ 'even-class': isEven, 'odd-class': isOdd }">
+        {{ i }} - {{ city }}
+    </p>
+</div>
