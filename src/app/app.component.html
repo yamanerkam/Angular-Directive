@@ -1,5 +1,8 @@
-<div *ngFor="let city of cities; index as  i;let isEven = even; let isOdd = odd ">
-    <p [ngClass]="{ 'even-class': isEven, 'odd-class': isOdd }">
-        {{ i }} - {{ city }}
-    </p>
+<button (click)="listToggleFunction()">toggle list</button>
+<div *ngIf="listToggle">
+    <div *ngFor="let city of cities; index as  i;let isEven = even; let isOdd = odd ">
+        <p [ngClass]="{ 'even-class': isEven, 'odd-class': isOdd }">
+            {{ i }} - {{ city }}
+        </p>
+    </div>
 </div>
