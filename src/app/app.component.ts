@@ -36,5 +36,5 @@ export class AppComponent {
   ];
 
   switchNumber = 2
-
+  // carry on from 26th minute on youtube
 }
