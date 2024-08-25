@@ -5,10 +5,12 @@
 
 </div>
 <hr>
+<hr>
 <button (click)="paidToggle()">toggle paid</button>
 <div *ngIf="isPaid;else elseContent">PAID</div>
 <ng-template #elseContent>
-    not paid
+    <h1 [ngStyle]="styleObject">not paid</h1>
+
 </ng-template>
 <hr>
 <button (click)="listToggleFunction()">toggle list</button>

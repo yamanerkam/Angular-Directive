@@ -15,6 +15,8 @@ export class AppComponent {
   // ngFor ngSwitch ngIf ngClass ngStyle ngModel ngNonBindable
   // it adds the html elements new behaviours and extra features
   // helps us to manipulate dom objects
+  styleObject = { 'font-size': '200px', 'color': 'blue' };
+
   listToggle: boolean = false
   isPaid = false
   paidToggle() {
